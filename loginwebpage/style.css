@@ -1,0 +1,90 @@
+body {
+  background-color: rgb(239, 250, 251);
+  font-family: "Open Sans", sans-serif;
+}
+
+.login,
+.register,
+.change-password {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  width: 320px;
+  font-family: "Roboto", sans-serif;
+  border-bottom: 1px solid black;
+  margin-bottom: 5px;
+}
+
+.forms {
+  margin-top: 5px;
+}
+
+.input-group {
+  width: 320px;
+}
+
+.register-link {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.submit-button {
+  width: 280px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  width: 100px;
+}
+
+.error {
+  padding: 0;
+  margin: 0;
+  color: rgb(228, 63, 63);
+}
+
+.change-btn {
+  margin-top: 10px;
+  width: 200px;
+}
+
+.home {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+}
+
+.welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.welcome p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+}
+
+.navbar {
+  justify-content: flex-end;
+}
+
+.navbar-nav {
+  flex-direction: row;
+}
+
+.nav-item {
+  margin-left: 12px;
+}
