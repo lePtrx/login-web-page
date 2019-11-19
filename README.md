@@ -15,6 +15,30 @@ This section will guide you on how to get the project up and running in your loc
 1. Download the files from Github.
 2. Copy `loginwebpage` folder into the following directory:
    `...\XAMPP\htdocs`
-3. Import the MySQL database using the `login_system.sql` file in phpMyAdmin.
-4. On your browser, type in the following address:
+3. Start up `Apache` and `MySQL`.
+4. Import the MySQL database using the `login_system.sql` file in phpMyAdmin.
+5. On your browser, type in the following address:
    `http://localhost/loginwebpage/login.php`
+
+# Testing the system :rocket:
+
+- Kindly refer to `use-case-diagram.pdf`.
+- New users will have to register an account through the registration page.
+- Existing users can log into the main page from login page.
+- In the main page, users can choose to change password or log out.
+
+## Note
+
+### Registration
+
+- All fields are required to be filled in.
+- New users cannot use already registered email.
+
+### Log in
+
+- All fields are required to be filled in.
+
+### Password change
+
+- Users must enter the correct current password in `Old password` field.
+- Users cannot use the choose a new password that is the same as the existing password.
