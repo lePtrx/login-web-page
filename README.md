@@ -15,4 +15,6 @@ This section will guide you on how to get the project up and running in your loc
 1. Download the files from Github.
 2. Copy `loginwebpage` folder into the following directory:
    `...\XAMPP\htdocs`
-3.
+3. Import the MySQL database using the `login_system.sql` file in phpMyAdmin.
+4. On your browser, type in the following address:
+   `http://localhost/loginwebpage/login.php`
