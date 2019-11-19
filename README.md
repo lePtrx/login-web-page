@@ -47,4 +47,24 @@ This section will guide you on how to get the project up and running in your loc
 
 ## Direct access
 
-Direct access into `index.php` or `change-password.php` through URL is restricted. This is possible through the
+Direct access into important pages of the main site such as `index.php` and `change-password.php` through URL is restricted. This is possible through `$_SERVER['HTTP_REFERER']` superglobal variable. Eg of the code:
+
+```php
+if (!isset($_SERVER['HTTP_REFERER'])) {
+    header('location: login.php');
+  }
+```
+
+If the pages are not directed from a referer, it'll be redirected back to `http://localhost/loginwebpage/login.php`.
+
+## Passwords
+
+Passwords are encrypted using MD5 algorithm. This will take user typed passwords and then hashed before being stored into the database.
+
+```php
+$password = md5($password1);
+$query = "INSERT INTO users (first_name, last_name, email, pass) VALUES ('$firstName', '$lastName', '$email', '$password')";
+mysqli_query($db, $query);
+```
+
+The codes above hashes the input password using the md5 algorithm before being inserted into MySQL database.
