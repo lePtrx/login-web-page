@@ -2,7 +2,7 @@
   session_start();
 
 // To redirect user back to login.php if not logged in
-  if (!isset($_SESSION['success'])) {
+  if (!isset($_SERVER['HTTP_REFERER'])) {
     header('location: login.php');
   }
 ?>
