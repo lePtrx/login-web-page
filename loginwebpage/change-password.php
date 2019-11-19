@@ -1,7 +1,7 @@
 <?php include('server.php') ?>
 
 <?php
-// To redirect user back to login.php if not logged in
+// To prevent direct access
   if (!isset($_SERVER['HTTP_REFERER'])) {
     header('location: login.php');
   }

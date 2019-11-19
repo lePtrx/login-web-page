@@ -1,7 +1,7 @@
-<?php 
-  session_start();
+<?php session_start(); ?>
 
-// To redirect user back to login.php if not logged in
+<?php
+// To prevent direct access
   if (!isset($_SERVER['HTTP_REFERER'])) {
     header('location: login.php');
   }
