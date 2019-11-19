@@ -42,3 +42,9 @@ This section will guide you on how to get the project up and running in your loc
 
 - Users must enter the correct current password in `Old password` field.
 - Users cannot use the choose a new password that is the same as the existing password.
+
+# Security handling :cop:
+
+## Direct access
+
+Direct access into `index.php` or `change-password.php` through URL is restricted. This is possible through the
