@@ -1,4 +1,10 @@
-<?php include('server.php') ?>
+<?php include('server.php') 
+
+// To redirect user back to login.php if not logged in
+  if (!isset($_SESSION['success'])) {
+    header('location: login.php');
+  }
+?>
 
 <!DOCTYPE html>
 <html lang="en">
