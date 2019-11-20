@@ -183,3 +183,7 @@ Users are not allowed to use back the current password as their new password dur
 ```
 
 After the user enters the new password, the password will be encryted using MD5 algorithm. A query will be made to the database using the email used during registration (through session). The result of the query (current password) will be compared to the encryted password entered by the user. If they are the same (new password is same as the old password), then an error message will be shown to the user.
+
+# ERD
+
+Kindly refer to `ERD.pdf`.
