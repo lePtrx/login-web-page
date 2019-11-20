@@ -187,3 +187,11 @@ After the user enters the new password, the password will be encryted using MD5 
 # ERD
 
 Kindly refer to `ERD.pdf`.
+
+# Data Dictionary :floppy_disk:
+
+Kindly refer to `Data dictionary.pdf`.
+
+# Use Case Diagram :thought_balloon:
+
+Kindly refer to `use-case-diagram.pdf`.
